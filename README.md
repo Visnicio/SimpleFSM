@@ -17,11 +17,11 @@ var gravity: float = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 func Physics_Process(_delta: float) -> void:
 	if !player_character.is_on_floor():
-		changed_state.emit(self, "player_falling")
+		change_state.emit(self, "player_falling")
 		pass
 	
 	if Input.is_action_just_pressed("backward") or Input.is_action_just_pressed("forward") or Input.is_action_just_pressed("left") or Input.is_action_just_pressed("right"):
-		changed_state.emit(self, "player_moving")
+		change_state.emit(self, "player_moving")
 	
 	player_character.velocity.x = 0
 	player_character.velocity.z = 0
@@ -31,3 +31,9 @@ func Physics_Process(_delta: float) -> void:
 ```
 ## Creating a new State
 ![Example of creating a state gif](addons/simplefsm/git_repo_misc/creating_new_state.gif)
+
+## Changing States
+To change between states is simple as calling the `change_state` signal, it takes two arguments, the state emmiting the signal and the desired state:
+``` gdscript
+change_state.emit(self, "your_new_state")
+```
