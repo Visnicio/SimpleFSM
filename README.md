@@ -30,4 +30,4 @@ func Physics_Process(_delta: float) -> void:
 	pass
 ```
 ## Creating a new State
-![Alt Text](addons\simplefsm\git_repo_misc\creating_new_state.gif)
+![Example of creating a state gif](addons/simplefsm/git_repo_misc/creating_new_state.gif)
