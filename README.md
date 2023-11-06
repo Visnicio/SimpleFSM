@@ -1,3 +1,8 @@
+# Installing
+
+ 1. Download the .zip file and extract the addons folder to your root project folder `res://`
+ 2. Enable the addon by ticking the enable checkbox at Project -> Project Settings -> addons
+
 # About
 This is a simple barebones FSM project, it contains a FSM brain and State class so you can focus on building your states and logic.
 
