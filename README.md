@@ -1,3 +1,7 @@
+<center>
+<img src="addons/simplefsm/git_repo_misc/logo_large.png" width="600">
+</center>
+
 # Installing
 
  1. Download the .zip file and extract the addons folder to your root project folder `res://`
